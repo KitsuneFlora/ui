@@ -1,0 +1,74 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+/* Opt-in base typography / body styles — does not target #app */
+
+html,
+body {
+  font-family: var(--fx-font-sans);
+  font-size: var(--fx-text-base);
+  line-height: var(--fx-leading-base);
+  background: var(--fx-color-bg);
+  color: var(--fx-color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fx-font-heading);
+  font-weight: var(--fx-font-weight-semibold);
+  color: var(--fx-color-text);
+  letter-spacing: var(--fx-tracking-tight);
+}
+
+h1 {
+  font-size: var(--fx-text-4xl);
+  line-height: var(--fx-leading-4xl);
+}
+h2 {
+  font-size: var(--fx-text-3xl);
+  line-height: var(--fx-leading-3xl);
+}
+h3 {
+  font-size: var(--fx-text-2xl);
+  line-height: var(--fx-leading-2xl);
+}
+h4 {
+  font-size: var(--fx-text-xl);
+  line-height: var(--fx-leading-xl);
+}
+h5 {
+  font-size: var(--fx-text-lg);
+  line-height: var(--fx-leading-lg);
+}
+h6 {
+  font-size: var(--fx-text-md);
+  line-height: var(--fx-leading-md);
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--fx-font-mono);
+  font-size: 0.92em;
+}
+
+code {
+  background: var(--fx-color-bg-muted);
+  color: var(--fx-color-text);
+  padding: 0.125em 0.375em;
+  border-radius: var(--fx-radius-xs);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--fx-color-border-subtle);
+  margin: var(--fx-space-6) 0;
+}
+
+small {
+  font-size: var(--fx-text-xs);
+  color: var(--fx-color-text-muted);
+}

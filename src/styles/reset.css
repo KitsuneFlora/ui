@@ -1,0 +1,142 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+/* Opt-in modern reset — does not target #app */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  color-scheme: light dark;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  line-height: var(--fx-leading-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: var(--fx-color-brand);
+  text-decoration-color: var(--fx-color-brand-border);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--fx-color-brand-hover);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--fx-ring-focus);
+  border-radius: var(--fx-radius-sm);
+}
+
+::selection {
+  background: var(--fx-color-selection-bg);
+  color: var(--fx-color-selection-text);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--fx-color-border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--fx-color-border);
+  border-radius: var(--fx-radius-full);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--fx-color-border-strong);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.fx-theme-transitioning,
+.fx-theme-transitioning *,
+.fx-theme-transitioning *::before,
+.fx-theme-transitioning *::after {
+  transition:
+    background-color var(--fx-motion-base-out),
+    border-color var(--fx-motion-base-out),
+    color var(--fx-motion-base-out),
+    fill var(--fx-motion-base-out),
+    stroke var(--fx-motion-base-out),
+    box-shadow var(--fx-motion-base-out) !important;
+  transition-delay: 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-theme-transitioning,
+  .fx-theme-transitioning *,
+  .fx-theme-transitioning *::before,
+  .fx-theme-transitioning *::after {
+    transition: none !important;
+  }
+}
