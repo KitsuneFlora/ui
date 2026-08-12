@@ -1,16 +1,16 @@
-# Third-party notices
+# 第三方声明
 
-Runtime and tooling dependencies retain their original licenses. Key items:
+运行时与工具链依赖保留各自原始许可证。主要条目：
 
-| Package                | License    | Notes                                                     |
-| ---------------------- | ---------- | --------------------------------------------------------- |
-| Vue                    | MIT        | Peer dependency                                           |
-| Reka UI (`reka-ui`)    | MIT        | Internal primitive only; not part of public API surface   |
-| Lucide (`@lucide/vue`) | ISC        | Some icons retain Feather MIT notice — see Lucide license |
-| Vite                   | MIT        | Dev/build                                                 |
-| TypeScript             | Apache-2.0 | Dev                                                       |
-| Vitest                 | MIT        | Dev/test                                                  |
-| Storybook              | MIT        | Dev/docs                                                  |
-| Prettier / ESLint      | MIT        | Dev                                                       |
+| 包 | 许可证 | 说明 |
+| --- | --- | --- |
+| Vue | MIT | Peer 依赖 |
+| Reka UI（`reka-ui`） | MIT | 仅作内部 primitive，不进入公开 API |
+| Lucide（`@lucide/vue`） | ISC | 部分源自 Feather 的图标同时保留 MIT notice，见 Lucide 许可证 |
+| Vite | MIT | 开发 / 构建 |
+| TypeScript | Apache-2.0 | 开发 |
+| Vitest | MIT | 开发 / 测试 |
+| Storybook | MIT | 开发 / 文档 |
+| Prettier / ESLint | MIT | 开发 |
 
-Preserve upstream copyright and license notices when redistributing corresponding source.
+再分发对应源码时，必须保留上游版权与许可证声明。

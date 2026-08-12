@@ -1,16 +1,16 @@
-# Migration from NatureUI
+# 从 NatureUI 迁移
 
-Pre-release: no compatibility shims.
+预发布阶段：不提供兼容垫片。
 
-1. Install `@kitsuneflora/ui` and import `@kitsuneflora/ui/style.css`.
-2. Optionally add `reset.css` / `preset.css`.
-3. Replace CSS variables with `--fx-*` equivalents (`--color-brand` → `--fx-color-brand`).
-4. Replace `data-theme` with `data-fx-theme`.
-5. Replace `useTheme` with `createFxTheme` / `useFxTheme` / `FxConfigProvider`.
-6. Import components from `@kitsuneflora/ui` instead of local `Fx*.vue`.
-7. Replace hardcoded Chinese chrome with locale or props (`closeLabel`, etc.).
-8. Prefer Lucide + `FxIcon` over inline SVGs for generic glyphs.
-9. Swap ad-hoc dialog shells for `FxDialog` / `FxConfirmDialog` / `FxDrawer`.
-10. Delete NatureUI local copies after call sites migrate.
+1. 安装 `@kitsuneflora/ui`，并导入 `@kitsuneflora/ui/style.css`。
+2. 按需增加 `reset.css` / `preset.css`。
+3. 将 CSS 变量改为 `--fx-*` 等价项（例如 `--color-brand` → `--fx-color-brand`）。
+4. 将 `data-theme` 改为 `data-fx-theme`。
+5. 将 `useTheme` 替换为 `createFxTheme` / `useFxTheme` / `FxConfigProvider`。
+6. 从 `@kitsuneflora/ui` 导入组件，不再使用本地 `Fx*.vue`。
+7. 用 locale 或 props（如 `closeLabel`）替换硬编码的通用中文 UI 文案。
+8. 通用图标优先使用 Lucide + `FxIcon`，少写内联 SVG。
+9. 用 `FxDialog` / `FxConfirmDialog` / `FxDrawer` 替换临时拼装的 dialog shell。
+10. 调用方全部迁移后，删除 NatureUI 本地副本。
 
-See [provenance.md](./provenance.md) for path mapping.
+路径映射见 [provenance.md](./provenance.md)。

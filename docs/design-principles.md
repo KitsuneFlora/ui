@@ -1,11 +1,11 @@
-# Design principles
+# 设计原则
 
-foxnature-ui follows the “暖狐毛、舒适圆润” (warm fox fur, comfortably rounded) visual language.
+foxnature-ui 遵循「暖狐毛、舒适圆润」视觉语言。
 
-1. **Warm surfaces** — creamy papers and soft browns; dark mode keeps amber brand contrast.
-2. **Roundness without toys** — consistent radius tokens; avoid sharp dashboard chrome.
-3. **Token-first** — no hardcoded palette in components; use `--fx-*` variables.
-4. **Namespaced** — public CSS vars `--fx-*`, classes `fx-*`; no `#app` assumptions.
-5. **Opt-in globals** — `reset.css` and `preset.css` are never implied by `style.css`.
-6. **Accessible by default** — visible focus, keyboard overlays, locale labels for chrome.
-7. **Pre-release honesty** — break freely until 1.0; no deprecated aliases or dual tokens.
+1. **温暖表面** — 奶油纸感与柔和棕色；暗色模式保持琥珀品牌对比。
+2. **圆润但不玩具化** — 统一使用圆角 token；避免生硬的仪表盘硬边。
+3. **Token 优先** — 组件内不写死色板，统一使用 `--fx-*` 变量。
+4. **命名空间** — 公共 CSS 变量 `--fx-*`，类名 `fx-*`；不假设存在 `#app`。
+5. **全局样式可选项** — `reset.css` 与 `preset.css` 从不由 `style.css` 隐式引入。
+6. **默认可访问** — 可见焦点、可键盘操作的 overlay、通用文案走 locale。
+7. **预发布诚实** — 1.0 前允许破坏性更新；不提供 deprecated alias 或双写 token。

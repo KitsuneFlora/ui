@@ -1,16 +1,16 @@
-# Icons
+# 图标
 
-## Rules
+## 规则
 
-1. Import Lucide icons with **named static imports** from `@lucide/vue`.
-2. Do **not** build a stringly-typed icon registry that bundles every glyph.
-3. The library does **not** re-export Lucide’s full set.
-4. `FxIcon` is a size/color container: pass a component via `icon` prop or use the default slot.
-5. Default stroke width is 2; color is `currentColor`.
-6. Sizes map to `--fx-size-icon-xs|sm|md|lg|xl`.
-7. Brand marks (`FxFoxMark`) stay custom — do not replace them with Lucide.
+1. 从 `@lucide/vue` **具名静态导入** Lucide 图标。
+2. **禁止**实现按字符串动态加载全图标表的注册表。
+3. 本库 **不** re-export Lucide 全量图标。
+4. `FxIcon` 只做尺寸 / 颜色容器：通过 `icon` prop 传入组件，或使用默认 slot。
+5. 默认描边宽度为 2；颜色为 `currentColor`。
+6. 尺寸绑定 `--fx-size-icon-xs|sm|md|lg|xl`。
+7. 品牌标志（`FxFoxMark`）保持自定义，不要用 Lucide 替换。
 
-## Example
+## 示例
 
 ```vue
 <script setup lang="ts">
@@ -23,19 +23,19 @@ import { FxIcon, FxButton } from '@kitsuneflora/ui'
     <template #prefix>
       <FxIcon :icon="Search" />
     </template>
-    Search
+    搜索
   </FxButton>
 </template>
 ```
 
-## Semantic map (starter)
+## 语义映射（起步）
 
-| Action             | Icon                    |
-| ------------------ | ----------------------- |
-| Close              | `X`                     |
-| Confirm / success  | `Check` / `CircleCheck` |
-| Warning            | `TriangleAlert`         |
-| Danger / error     | `CircleX`               |
-| Info               | `Info`                  |
-| Expand             | `ChevronDown`           |
-| Password show/hide | `Eye` / `EyeOff`        |
+| 操作 | 图标 |
+| --- | --- |
+| 关闭 | `X` |
+| 确认 / 成功 | `Check` / `CircleCheck` |
+| 警告 | `TriangleAlert` |
+| 危险 / 错误 | `CircleX` |
+| 信息 | `Info` |
+| 展开 | `ChevronDown` |
+| 显示 / 隐藏密码 | `Eye` / `EyeOff` |

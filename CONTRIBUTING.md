@@ -1,20 +1,20 @@
-# Contributing
+# 贡献指南
 
-## License
+## 许可证
 
-By contributing you agree inbound=outbound under **AGPL-3.0-or-later**. Use DCO Signed-off-by on commits:
+贡献即同意按 inbound=outbound 以 **AGPL-3.0-or-later** 纳入本项目。提交请附带 DCO `Signed-off-by`：
 
 ```text
-Signed-off-by: Your Name <you@example.com>
+Signed-off-by: 你的名字 <you@example.com>
 ```
 
-## Setup
+## 环境准备
 
 - Node.js 24
 - `npm install`
 - `npm run tokens:generate`
 
-## Checks
+## 检查命令
 
 ```bash
 npm run fmt:check
@@ -24,11 +24,11 @@ npm run test
 npm run build
 ```
 
-## Component checklist
+## 组件完成清单
 
-- Props/Emits/Slots documented in stories
-- `--fx-*` tokens only
-- No Reka types in public exports
-- Locale for generic chrome strings
-- Keyboard + focus behavior for overlays
-- SPDX header on source files
+- Props / Emits / Slots 在 stories 中有说明
+- 样式只使用 `--fx-*` token
+- 公开导出不泄漏 Reka 类型
+- 通用 UI 文案走 locale
+- Overlay 组件具备键盘与焦点行为
+- 源文件带 SPDX 头

@@ -1,13 +1,13 @@
-# Changelog
+# 更新日志
 
 ## 0.1.0-alpha.0 — 2026-08-12
 
-### Added
+### 新增
 
-- Initial AGPL library scaffold for `@kitsuneflora/ui`
-- `--fx-*` token system with generate/check scripts (includes warning/semantic borders)
-- Theme runtime (`createFxTheme`, `useFxTheme`, bootstrap snippet) with `data-fx-theme`
-- `FxConfigProvider` with locale messages (`zh-CN`, `en-US`)
-- Components: Button, IconButton, Input, Textarea, Select, Checkbox, Switch, FormField, Alert, Spinner, Badge, EmptyState, Card, PageHeader, PanelHeader, Dialog, ConfirmDialog, Drawer, FoxMark, LegalNotice, Icon
-- Opt-in `reset.css` / `preset.css`
-- Storybook, Vitest, playground, CI workflow
+- 建立 `@kitsuneflora/ui` 的 AGPL 库脚手架
+- `--fx-*` token 系统，含生成 / 校验脚本（含 warning 等语义边框）
+- 主题运行时（`createFxTheme`、`useFxTheme`、bootstrap snippet），使用 `data-fx-theme`
+- `FxConfigProvider`，内置 `zh-CN` / `en-US` 通用文案
+- 组件：Button、IconButton、Input、Textarea、Select、Checkbox、Switch、FormField、Alert、Spinner、Badge、EmptyState、Card、PageHeader、PanelHeader、Dialog、ConfirmDialog、Drawer、FoxMark、LegalNotice、Icon
+- 可选接入的 `reset.css` / `preset.css`
+- Storybook、Vitest、playground 与 CI 工作流

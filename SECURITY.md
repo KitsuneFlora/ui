@@ -1,9 +1,9 @@
-# Security
+# 安全策略
 
-## Reporting
+## 报告方式
 
-Please report vulnerabilities privately to the maintainers of [KitsuneFlora/foxnature-ui](https://github.com/KitsuneFlora/foxnature-ui). Do not open a public issue for unfixed security problems.
+请将漏洞私下报告给 [KitsuneFlora/foxnature-ui](https://github.com/KitsuneFlora/foxnature-ui) 维护者。未修复的安全问题请勿先开公开 Issue。
 
-## Supported versions
+## 支持版本
 
-Only the latest `0.1.x` pre-release line is supported until 1.0.
+在 1.0 之前，仅支持最新的 `0.1.x` 预发布线。

@@ -1,27 +1,27 @@
-# Theming
+# 主题
 
-## Attribute
+## 属性
 
-Resolved theme is written as `data-fx-theme="light|dark"` on the target element (default `document.documentElement`). ShadowRoot hosts are supported via `createFxTheme({ target })`.
+解析后的主题会写入目标元素的 `data-fx-theme="light|dark"`（默认 `document.documentElement`）。可通过 `createFxTheme({ target })` 指定 ShadowRoot 宿主。
 
-Preference may be `light | dark | auto`.
+偏好可为 `light | dark | auto`。
 
 ## Bootstrap
 
 ```ts
 import { bootstrapFxTheme, getFxThemeBootstrapSnippet } from '@kitsuneflora/ui/theme'
 
-// before createApp
+// createApp 之前
 bootstrapFxTheme({ storageKey: 'foxnature-ui.theme' })
 ```
 
-Inline snippet for zero-flash HTML:
+零闪烁内联脚本：
 
 ```ts
 getFxThemeBootstrapSnippet()
 ```
 
-## Config provider
+## ConfigProvider
 
 ```vue
 <FxConfigProvider locale="zh-CN" :theme-preference="'auto'">
@@ -29,15 +29,15 @@ getFxThemeBootstrapSnippet()
 </FxConfigProvider>
 ```
 
-## Transitions
+## 过渡
 
-During theme changes the controller adds `fx-theme-transitioning`. Motion is skipped when `prefers-reduced-motion: reduce`.
+主题切换时控制器会添加 `fx-theme-transitioning`。当 `prefers-reduced-motion: reduce` 时跳过动画。
 
-## CSS entries
+## CSS 入口
 
-| Import                        | Purpose                         |
-| ----------------------------- | ------------------------------- |
-| `@kitsuneflora/ui/tokens.css` | Variables only                  |
-| `@kitsuneflora/ui/style.css`  | Tokens + component styles       |
-| `@kitsuneflora/ui/reset.css`  | Opt-in reset                    |
-| `@kitsuneflora/ui/preset.css` | Opt-in body/heading/code styles |
+| 导入 | 用途 |
+| --- | --- |
+| `@kitsuneflora/ui/tokens.css` | 仅变量 |
+| `@kitsuneflora/ui/style.css` | token + 组件样式 |
+| `@kitsuneflora/ui/reset.css` | 可选 reset |
+| `@kitsuneflora/ui/preset.css` | 可选 body / heading / code 等排版 |
