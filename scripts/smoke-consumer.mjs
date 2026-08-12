@@ -4,11 +4,9 @@
  * Usage: node scripts/smoke-consumer.mjs [path-to-tarball]
  */
 import { execSync } from 'node:child_process'
-import { mkdtempSync, rmSync, writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs'
-import { createRequire } from 'node:module'
+import { mkdtempSync, rmSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { join, resolve, dirname } from 'node:path'
-import { pathToFileURL } from 'node:url'
+import { join, resolve } from 'node:path'
 
 const tarballArg = process.argv[2]
 const root = resolve(import.meta.dirname, '..')
@@ -82,9 +80,7 @@ console.log('smoke-consumer ok')
 } finally {
   rmSync(dir, { recursive: true, force: true })
   // Clean accidental pack artifacts in repo root.
-  const packedName = 'kitsuneflora-ui-0.1.0-alpha.0.tgz'
-  const localPack = join(root, packedName)
-  if (!tarballArg && existsSync(localPack)) {
-    rmSync(localPack, { force: true })
+  if (!tarballArg && existsSync(tarball)) {
+    rmSync(tarball, { force: true })
   }
 }
