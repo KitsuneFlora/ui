@@ -1,0 +1,9 @@
+dist
+storybook-static
+coverage
+node_modules
+*.tgz
+package-lock.json
+src/styles/tokens.css
+src/tokens/generated.ts
+LICENSE
